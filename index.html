@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Mine Consultant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#003147',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white text-primary shadow-lg z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-2">
+                <div class="text-xl font-bold">
+                    <img src="./assets/img/green_logo.png" alt="Logo" class="h-16 w-auto"> <!-- Logo size increased -->
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#welcome" class="hover:text-primary">Home</a>
+                    <a href="#history" class="hover:text-primary">History</a>
+                    <a href="#vision" class="hover:text-primary">Vision & Mission</a>
+                    <a href="#why-us" class="hover:text-primary">Why Us</a>
+                    <a href="#services" class="hover:text-primary">Services</a>
+                    <a href="#contact" class="hover:text-primary">Contact</a>
+                </div>
+                <button class="md:hidden" onclick="toggleMenu()">
+                    <i class="fas fa-bars text-primary"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-4 py-2 space-y-2">
+                <a href="#welcome" class="block hover:text-primary">Home</a>
+                <a href="#history" class="block hover:text-primary">History</a>
+                <a href="#vision" class="block hover:text-primary">Vision & Mission</a>
+                <a href="#why-us" class="block hover:text-primary">Why Us</a>
+                <a href="#services" class="block hover:text-primary">Services</a>
+                <a href="#contact" class="block hover:text-primary">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section id="welcome" class="pt-24 pb-12 bg-primary text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Green Mine Consultant</h1>
+                <p class="text-xl mb-8">Experts in Responsible Mining and Environmental Management</p>
+                <a href="#contact" class="bg-white text-primary px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition duration-300">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+  <!-- Welcome to Green Mine Section -->
+  <section id="home" class="py-16">
+    <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="animate-on-scroll fade-in-left">
+                <h2 class="text-3xl font-bold mb-8 text-primary">Welcome to Green Mine Consultant</h2>
+                <div class="prose">
+                    <p class="text-gray-700 leading-relaxed">
+                        Green Mine Consultant is a leading provider of mining services, specializing in the preparation of critical documents, including Environmental Impact Analysis (AMDAL), Feasibility Studies, and other necessary permits for mining operations. Our comprehensive services also include exploration solutions designed to support mining companies in achieving their strategic goals.
+                    </p>
+                    <br>
+                    <p class="text-gray-700 leading-relaxed">
+                        Founded with the purpose of assisting Indonesian mining companies in implementing good and sustainable mining practices, we recognize the vast mining potential in Indonesia as an opportunity to help mining companies improve their practices and achieve higher standards.
+                    </p>
+                    <br>
+                    <p class="text-gray-700 leading-relaxed">
+                        With our expertise and experience, we are well-equipped to support your mining company in achieving better and more sustainable goals.
+                    </p>
+                </div>
+            </div>
+            <div class="animate-on-scroll fade-in-right">
+                <div class="bg-white p-4 rounded-lg shadow-lg max-w-sm mx-auto">
+                    <img src="./assets/img/1.jpg" alt="Mining Operations" class="w-full h-48 object-cover rounded-lg mb-4">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Company History Section -->
+<section id="history" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="animate-on-scroll fade-in-left order-2 md:order-1">
+                <div class="bg-white p-4 rounded-lg shadow-lg max-w-sm mx-auto">
+                    <img src="./assets/img/history.jpg" alt="Company Growth" class="w-full h-48 object-cover rounded-lg mb-4">
+                </div>
+            </div>
+            <div class="animate-on-scroll fade-in-right order-1 md:order-2">
+                <h2 class="text-3xl font-bold mb-4 text-primary">Company History</h2>
+                <p class="text-2xl font-light text-primary/80 mb-8">Since 2025</p>
+                <div class="prose">
+                    <p class="text-gray-700 leading-relaxed">
+                        The company was founded by three mining engineering graduates with extensive experience in the mining industry. The founders established the company with the goal of becoming a reputable consulting firm that provides valuable services to mining companies by consistently applying Good Mining Practices in accordance with prevailing regulations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Vision and Mission Section -->
+    <section id="vision" class="py-16 bg-green-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-green-800">Vision and Mission</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4 text-green-700">Our Vision</h3>
+                    <p class="text-gray-700">1. To become a leading mining consulting firm that drives innovation and operational excellence</p>
+                    <p class="text-gray-700">2. To enhance value for our clients through exceptional and sustainable mining consulting services</p>
+                    <p class="text-gray-700">3. To build a reputation as the most trusted and respected mining consulting firm in the industry</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4 text-green-700">Our Mission</h3>
+                    <p class="text-gray-700">1. Providing high-quality, innovative consulting services to help clients achieve their business objectives</p>
+                    <p class="text-gray-700">2. Enhancing client efficiency, productivity, and operational safety through the implementation of best practices</p>
+                    <p class="text-gray-700">2. Developing and implementing sustainable, client-centric solutions that meet their evolving needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-primary animate-on-scroll">Why Choose Us?</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="animate-on-scroll bg-white p-6 rounded-lg shadow-lg text-center" style="transition-delay: 200ms">
+                    <div class="w-24 h-24 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
+                        <i class="fas fa-medal text-4xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-primary">Technological Innovation</h3>
+                    <p class="text-gray-600">We utilize cutting-edge technology to enhance operational efficiency and productivity in mining operations</p>
+                </div>
+                <div class="animate-on-scroll bg-white p-6 rounded-lg shadow-lg text-center" style="transition-delay: 400ms">
+                    <div class="w-24 h-24 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
+                        <i class="fas fa-leaf text-4xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-primary">Competence and Experience</h3>
+                    <p class="text-gray-600">Our team comprises experienced mining experts with a proven track record in delivering successful mining projects.</p>
+                </div>
+                <div class="animate-on-scroll bg-white p-6 rounded-lg shadow-lg text-center" style="transition-delay: 600ms">
+                    <div class="w-24 h-24 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
+                        <i class="fas fa-chart-line text-4xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-primary">Quality and Safety Management</h3>
+                    <p class="text-gray-600">We possess an integrated quality and safety management system to ensure that all our projects are executed safely and effectively</p>
+                </div>
+                <div class="animate-on-scroll bg-white p-6 rounded-lg shadow-lg text-center" style="transition-delay: 800ms">
+                    <div class="w-24 h-24 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
+                        <i class="fas fa-handshake text-4xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-primary">Environmentally Friendly Services</h3>
+                    <p class="text-gray-600">We are committed to providing environmentally friendly and sustainable services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-primary">Our Services</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="animate-on-scroll service-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="./assets/img/3.jpg" alt="Mining Feasibility Studies" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-primary">Mine Exploration</h3>
+                        <p class="text-gray-600">Geophysical methods (geoelectric) and Drilling
+                        </p>
+                    </div>
+                </div>
+                <div class="animate-on-scroll service-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="./assets/img/2.jpg" alt="Mining Feasibility Studies" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-primary">Feasibility Study</h3>
+                        <p class="text-gray-600">Preparation of feasibility study documents</p>
+                    </div>
+                </div>
+                <div class="animate-on-scroll service-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="./assets/img/amdal.jpg" alt="Mining Feasibility Studies" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-primary">Licensing Documents</h3>
+                        <p class="text-gray-600">IUP,IUJP, UKL-UPL/AMDAL</p>
+                    </div>
+                </div>
+                <div class="animate-on-scroll service-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="./assets/img/class.jpg" alt="Mining Feasibility Studies" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-primary">Training Class</h3>
+                        <p class="text-gray-600">Software training and how to become a good mining engineer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16">
+        <div class="container mx-auto px-4 flex justify-center">
+            <div class="w-full max-w-md bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold text-center mb-12 text-primary">Contact Us</h2>
+                <div class="bg-white">
+                    <h3 class="text-2xl font-bold mb-4 text-primary">Contact Information</h3>
+                    <div class="space-y-4">
+                        <p class="flex items-center text-gray-700">
+                            <i class="fas fa-map-marker-alt w-6 text-primary"></i>
+                            Green Mine Consultant
+                        </p>
+                        <p class="flex items-center text-gray-700">
+                            <i class="fas fa-phone w-6 text-primary"></i>
+                            +62-859-5918-3420
+                        </p>
+                        <p class="flex items-center text-gray-700">
+                            <i class="fas fa-envelope w-6 text-primary"></i>
+                            greenmineconsultant@gmail.com
+                        </p>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="font-bold mb-4 text-primary">Follow Us</h4>
+                        <div class="flex justify-center space-x-4">
+                            <a href="https://www.facebook.com/profile.php?id=61572559739745&mibextid=wwXIfr&rdid=RGVrSix92nze3AIZ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1B1uvyHETE%2F%3Fmibextid%3DwwXIfr#" class="text-2xl text-primary hover:text-primary/80">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/greenmineconsultant?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-2xl text-primary hover:text-primary/80">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@greenmineconsultant" class="text-2xl text-primary hover:text-primary/80">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/green-mine-consultant/" class="text-2xl text-primary hover:text-primary/80">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h4 class="text-xl font-bold mb-4">About Us</h4>
+                    <p class="text-gray-200">Green Mine Consultant is your trusted partner in mining excellence, providing comprehensive consultancy services for sustainable mining operations.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#welcome" class="text-gray-200 hover:text-white">Home</a></li>
+                        <li><a href="#services" class="text-gray-200 hover:text-white">Services</a></li>
+                        <li><a href="#contact" class="text-gray-200 hover:text-white">Contact</a></li>
+                        <li><a href="#vision" class="text-gray-200 hover:text-white">Vision & Mission</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-200/20 text-center">
+                <p class="text-gray-200">&copy; 2025 Green Mine Consultant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./assets/script.js">
+        const contactForm = document.querySelector('form');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = contactForm.querySelector('input[type="text"]').value;
+            const email = contactForm.querySelector('input[type="email"]').value;
+            const message = contactForm.querySelector('textarea').value;
+
+            if (!name || !email || !message) {
+                alert('Please fill in all fields');
+                return;
+            }
+
+            alert('Thank you for your message! We will get back to you soon.');
+            contactForm.reset();
+        });
+    </script>
+</body>
+</html>

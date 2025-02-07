@@ -1,0 +1,42 @@
+html {
+    scroll-behavior: smooth;
+}
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+    visibility: hidden;
+}
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+.service-card {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+    visibility: hidden;
+}
+.service-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+.fade-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 1s ease;
+    visibility: hidden;
+}
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 1s ease;
+    visibility: hidden;
+}
+.fade-in-left.visible, .fade-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+}
